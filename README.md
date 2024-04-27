@@ -17,10 +17,7 @@ To run your server without keeping it open, use the below commands.
 
 ## Server Configuration
 
-To properly advertise your server, add admins/mods and change your server name, edit the `serverConfig.lua` found in `~/.local/share/majicjungle/sapiens`. If you're used to `nano` (from the install steps), run:
-```
-nano ~/.local/share/majicjungle/sapiens/serverConfig.lua
-```
+To properly advertise your server, add admins/mods and change your server name, edit the `serverConfig.lua` found in `~/.local/share/majicjungle/sapiens`. If you're used to `nano` (from the install steps), run: `nano ~/.local/share/majicjungle/sapiens/serverConfig.lua`
 
 ## Commands
 
