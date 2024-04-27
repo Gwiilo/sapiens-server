@@ -15,6 +15,13 @@ Been tested on:
 
 To run your server without keeping it open, use the below commands. 
 
+## Server Configuration
+
+To properly advertise your server, add admins/mods and change your server name, edit the `serverConfig.lua` found in `~/.local/share/majicjungle/sapiens`. If you're used to `nano` (from the install steps), run:
+```
+nano ~/.local/share/majicjungle/sapiens/serverConfig.lua
+```
+
 ## Commands
 
 **./sapiens.sh start** - starts your server in a screen session so it is running in the background.<br>
@@ -22,6 +29,13 @@ To run your server without keeping it open, use the below commands.
 **./sapiens.sh restart** - Basically a stop, wait, and then a start.  Good to bounce the server if things are getting laggy.<br>
 **./sapiens.sh console** - When a server is running in the background use this command to bring up the server console.  To exit the console without stopping the server hold CTRL and type A D.<br>
 
+## Accessing from the internet
+How you access it from the internet depends on how you've set up the server. In essence, you need to open the following ports:
+ - 16161/udp (or your `config.sh`'s UDP_PORT)
+ - 16162/udp (or your `config.sh`'s UDP_PORT + 1) (if you enabled advertising)
+ - 16168/tcp (or your `config.sh`'s HTTP_PORT)
+
+These change with the options in `config.sh`
 
 ## Updating your server
 Run open the directory up, and run these two commands:
