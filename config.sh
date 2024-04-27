@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Location of where the server executable is located.  If you followed the readme instructions this probably doesn't need to be changed.
-GAME_DIR="./server"
+GAME_DIR="/mnt/server"
 
 # Location of where the world is.  You will need to see what was generated and set it here and replace the CAPS_VALUES to match what you have.
 # WORLD_DIR="/home/YOUR_USERNAME/.local/share/majicjungle/sapiens/players/PLAYER_NUMBER_FOLDER_NAME/worlds/WORLD_NUMBER_FOLDER_NAME"

@@ -7,10 +7,11 @@
 # Import your configuration
 source config.sh
 
+cd $GAME_DIR
+
 while true; do
     # Start the server with the world name passed when starting the script.  If you need to modify
     # any of the server arguments you can do it here.
-    cd $GAME_DIR
     ./linuxServer --load "$WORLD_NAME" --port "$UDP_PORT" --http-port "$HTTP_PORT"
 
     # Check the exit status of the command.  If it's non zero we will assume it crashed
