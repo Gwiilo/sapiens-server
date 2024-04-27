@@ -2,7 +2,7 @@
 Some helpful scripts for running a Sapiens dedicated server on Linux. Designed to be run as root.
 
 Been tested on:
-    - `ubuntu:noble` Docker image
+ - `ubuntu:noble` Docker image
 
 ## Installation
 
