@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Location of where the server executable is located.  If you followed the readme instructions this probably doesn't need to be changed.
+# Location of where the server executable is located. Needs to be absolute (no relative paths)
 GAME_DIR="/mnt/server"
 
 # World Name.  This is the name used in the game that shows up on the map as well as the server listing.
