@@ -25,20 +25,21 @@ source config.sh
 
 ## download and install steamcmd
 cd /tmp
-mkdir -p /mnt/server/steamcmd
+mkdir -p "${GAME_DIR}/steamcmd"
 curl -sSL -o steamcmd.tar.gz https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-tar -xzvf steamcmd.tar.gz -C /mnt/server/steamcmd
-cd /mnt/server/steamcmd
+tar -xzvf steamcmd.tar.gz -C "${GAME_DIR}/steamcmd"
+cd "${GAME_DIR}/steamcmd"
 
 # SteamCMD fails otherwise for some reason, even running as root.
 # This is changed at the end of the install process anyways.
-chown -R root:root /mnt
-export HOME=/mnt/server
+chown -R root:root ${GAME_DIR}
+export OLD_HOME=~
+export HOME=${GAME_DIR}
 
 ## install game using steamcmd
 ./steamcmd.sh +login ${STEAM_USER} ${STEAM_PASS} ${STEAM_AUTH} +force_install_dir ${GAME_DIR} +app_update ${SRCDS_APPID} ${EXTRA_FLAGS} validate +quit ## other flags may be needed depending on install. looking at you cs 1.6
 
-export HOME=/root/
+export HOME=$OLD_HOME
 
 ## link steam
 mkdir -p ~/.steam/sdk64
