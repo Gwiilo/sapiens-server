@@ -4,7 +4,7 @@
 # Server Files: /mnt/server
 # Image to install with is 'debian:buster-slim'
 apt -y update
-apt -y --no-install-recommends install curl ca-certificates
+apt -y --no-install-recommends install curl ca-certificates screen
 
 dpkg --add-architecture i386 && apt update && apt install libcurl4-openssl-dev:i386 -y
 

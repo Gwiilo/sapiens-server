@@ -3,12 +3,6 @@
 # Location of where the server executable is located.  If you followed the readme instructions this probably doesn't need to be changed.
 GAME_DIR="/mnt/server"
 
-# Location of where the world is.  You will need to see what was generated and set it here and replace the CAPS_VALUES to match what you have.
-# WORLD_DIR="/home/YOUR_USERNAME/.local/share/majicjungle/sapiens/players/PLAYER_NUMBER_FOLDER_NAME/worlds/WORLD_NUMBER_FOLDER_NAME"
-
-# The folder where the backup command will send your world archive.  This folder was created with the git package, just change as necessary. 
-# BACKUP_DIR="/home/YOUR_USERNAME/sapiens-server/world_backups"
-
 # World Name.  This is the name used in the game that shows up on the map as well as the server listing.
 WORLD_NAME="You forgot to change this name you dummy"
 
