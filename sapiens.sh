@@ -30,7 +30,7 @@ start_server() {
 }
 
 stop_server() {
-    screen -S $SCREEN_NAME -p 0 -X stuff "stop^M"
+    screen -XS $SCREEN_NAME quit
 }
 
 open_console() {
