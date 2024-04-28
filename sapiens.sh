@@ -52,6 +52,13 @@ case $1 in
     upgrade)
         upgrade_server
         ;;
+    restartupgrade)
+        stop_server
+        sleep 5
+        upgrade_server
+        sleep 30
+        start_server
+        ;;
     console)
         open_console
         ;;    
